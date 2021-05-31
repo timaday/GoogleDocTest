@@ -1,0 +1,40 @@
+{
+  "name": "LoginTest",
+  "version": "1.0.0",
+  "description": "Test for Login Form security",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run --browser chromium --headed",
+    "cypress:open": "cypress open",
+    "report": "node ./cypress/support/cucumber-html-report.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timaday/LoginTest.git"
+  },
+  "author": "Tim Day",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timaday/LoginTest/issues"
+  },
+  "homepage": "https://github.com/timaday/LoginTest#readme",
+  "devDependencies": {
+    "chalk": "^4.1.1",
+    "cucumber": "^7.0.0-rc.0",
+    "cucumber-html-reporter": "^5.4.0",
+    "cypress": "^7.4.0",
+    "cypress-cucumber-preprocessor": "^4.1.0",
+    "dotenv": "^10.0.0",
+    "fs-extra": "^10.0.0",
+    "multiple-cucumber-html-reporter": "^1.18.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/report",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  }
+}

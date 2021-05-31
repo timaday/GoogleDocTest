@@ -1,0 +1,14 @@
+{
+  "integrationFolder": "cypress/integration",
+  "pluginsFile": "cypress/plugins/index.js",
+  "supportFile": "cypress/support/index.js",
+  "baseUrl": "https://www.saucedemo.com",
+  "chromeWebSecurity": false,
+  "env": {
+    "TAGS": "not @exclude"
+  },
+  "screenshotOnRunFailure": true,
+  "video": false,
+  "testFiles": "**/*.feature",
+  "ignoreTestFiles": ["*.js", "*.ts", "*.md"]
+}
