@@ -9,7 +9,7 @@ cypress/integration/LoginTest.feature
 ```
 And the step definitions for this feature can be found in 
 ```
-cypress/integration/LoginTest.LoginTest.steps.js
+cypress/integration/LoginTest/LoginTest.steps.js
 ```
 
 The page object model was utilised, the classes can be found in
